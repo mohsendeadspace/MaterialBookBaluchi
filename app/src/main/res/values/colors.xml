@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2E7D32</color>
+    <color name="colorPrimaryDark">#1B5E20</color>
+    <color name="colorAccent">#388E3C</color>
+    <color name="navigationBarColor">#1B5E20</color>
+    <color name="indigo">#757575</color>
+    <color name="pink">#424242</color>
+
+
+</resources>

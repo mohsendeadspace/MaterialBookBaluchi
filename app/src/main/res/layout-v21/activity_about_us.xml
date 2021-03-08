@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:id="@+id/toolbar"
+        android:elevation="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/text"
+                android:text="درباره ما"
+                android:textColor="#ffffff"
+                android:textSize="20dp"/>
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_marginTop="17dp"
+        android:layout_height="150dp"
+        android:id="@+id/aboutus"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true" />
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="ایمیل جهت ارتباط با ما:"
+      android:textSize="22dp"
+      android:textColor="#424242"
+      android:id="@+id/txt4"
+      android:layout_below="@+id/aboutus"
+      android:layout_centerHorizontal="true"
+      />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="mtm.2010boy008@gmail.com"
+        android:textSize="18dp"
+        android:textColor="#424242"
+        android:id="@+id/txt1"
+        android:layout_below="@+id/txt4"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="تیم سازنده: "
+      android:textSize="20dp"
+      android:textColor="#424242"
+      android:id="@+id/txt5"
+      android:layout_marginTop="3dp"
+      android:layout_below="@+id/txt1"
+      android:layout_centerHorizontal="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ادهم آسکانی-محسن فرامرزیان "
+        android:textSize="18dp"
+        android:textColor="#424242"
+        android:id="@+id/txt2"
+        android:layout_marginTop="3dp"
+        android:layout_below="@+id/txt5"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="ورژن برنامه: "
+      android:textSize="20dp"
+      android:textColor="#424242"
+      android:id="@+id/txt6"
+      android:layout_marginTop="3dp"
+      android:layout_below="@+id/txt2"
+      android:layout_centerHorizontal="true" />
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="1.00 "
+      android:textSize="14dp"
+      android:textColor="#424242"
+      android:id="@+id/txt3"
+      android:layout_marginTop="3dp"
+      android:layout_below="@+id/txt6"
+      android:layout_centerHorizontal="true" />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".moghadame">
+
+  <androidx.appcompat.widget.Toolbar
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/colorPrimary"
+    android:id="@+id/toolbar"
+    android:elevation="10dp">
+
+    <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text"
+        android:text="مقدمه"
+        android:textColor="#ffffff"
+        android:textSize="20dp"/>
+
+    </RelativeLayout>
+
+  </androidx.appcompat.widget.Toolbar>
+
+  <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    android:layout_below="@+id/toolbar"
+    android:layout_centerHorizontal="true"
+    >
+    <androidx.cardview.widget.CardView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      app:cardBackgroundColor="#fff"
+      app:cardElevation="6dp"
+      app:contentPadding="6dp"
+      app:cardPreventCornerOverlap="true"
+      app:cardUseCompatPadding="true"
+      android:layout_margin="8dp"
+      app:cardCornerRadius="6dp"
+      android:foreground="?android:attr/selectableItemBackground"
+      tools:ignore="WebViewLayout">
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#424242"
+        android:id="@+id/txtmatn"
+        android:layout_below="@+id/toolbar"
+        android:layout_margin="15dp"
+        android:textIsSelectable="true"
+        android:layout_centerHorizontal="true"
+        />
+  </androidx.cardview.widget.CardView>
+  </ScrollView>
+
+</RelativeLayout>

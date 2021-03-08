@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent" android:layout_height="match_parent"
+  >
+
+
+
+
+  <androidx.appcompat.widget.Toolbar
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/colorPrimary"
+    android:id="@+id/toolbar"
+    android:elevation="10dp">
+
+
+    <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+      <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/imgfav"
+
+        android:layout_alignParentRight="false"
+        android:layout_marginLeft="25dp"
+        android:background="?attr/selectableItemBackground"
+        android:theme="@style/MyButton"
+        android:layoutDirection="rtl"
+        android:elevation="10dp"
+        android:onClick="btnfave"
+        android:layout_alignParentLeft="true" />
+
+      <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/imgvisit"
+        android:layout_alignParentRight="false"
+        android:layout_marginLeft="70dp"
+        android:background="?attr/selectableItemBackground"
+        android:theme="@style/MyButton"
+        android:layoutDirection="rtl"
+        android:elevation="10dp"
+        android:onClick="btnsee"
+        android:layout_alignParentLeft="true" />
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="title"
+        android:layout_alignParentRight="true"
+        android:id="@+id/txtbooktitle"
+        android:textColor="#ffffff"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/imgfav"
+        android:layout_alignStart="@+id/imgfav" />
+
+    </RelativeLayout>
+
+  </androidx.appcompat.widget.Toolbar>
+
+
+  <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/scrollView"
+    android:layout_marginTop="15dp"
+    android:layout_margin="3dp"
+    android:layout_gravity="center_horizontal"
+    android:layout_below="@+id/txtbookauthor"
+    android:layout_centerHorizontal="true">
+
+    <androidx.cardview.widget.CardView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      app:cardBackgroundColor="#fff"
+      app:cardElevation="6dp"
+      app:contentPadding="6dp"
+      app:cardPreventCornerOverlap="true"
+      app:cardUseCompatPadding="true"
+      android:layout_margin="6dp"
+      app:cardCornerRadius="6dp"
+      android:foreground="?android:attr/selectableItemBackground"
+      tools:ignore="WebViewLayout">
+
+    <WebView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text=""
+      android:padding="10dp"
+      android:layout_margin="10dp"
+      android:textSize="16dp"
+      android:id="@+id/matn"
+      android:textIsSelectable="true"
+      android:textColor="#424242"/>
+    </androidx.cardview.widget.CardView>
+  </ScrollView>
+
+  <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="author"
+    android:id="@+id/txtbookauthor"
+    android:layout_marginTop="5dp"
+    android:textColor="#424242"
+    android:layout_below="@+id/toolbar"
+    android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

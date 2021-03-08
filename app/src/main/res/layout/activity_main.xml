@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                tools:context="com.brakets.app.baloch.MainActivity"
+                android:background="#ffffff">
+
+
+    <include layout="@layout/toolbar" />
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn1"
+        android:text="پیشگفتار"
+        android:textColor="#ffffff"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="60dp"
+        android:theme="@style/MyButton"
+        android:elevation="10dp"
+        android:onClick="btnPishgoftar"
+        android:drawableRight="@drawable/ic_library_books_black_24dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="مقدمه"
+        android:id="@+id/btn2"
+        android:layout_below="@+id/btn1"
+        android:textColor="#ffffff"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:theme="@style/MyButton"
+        android:elevation="10dp"
+        android:onClick="btnMoghadame"
+        android:drawableRight="@drawable/ic_mode_edit_black_24dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="فهرست مطالب"
+        android:id="@+id/btn3"
+        android:layout_below="@+id/btn2"
+        android:textColor="#ffffff"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:theme="@style/MyButton"
+        android:elevation="10dp"
+        android:onClick="btnListMataleb"
+        android:drawableRight="@drawable/ic_menu_black_24dp"/>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="علاقه مندی ها"
+        android:textColor="#ffffff"
+        android:id="@+id/btn4"
+
+        android:layout_below="@+id/btn3"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:theme="@style/MyButton"
+        android:elevation="10dp"
+        android:onClick="btnFavorit"
+        android:drawableRight="@drawable/ic_favorite_black_24dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+      android:layout_width="200dp"
+      android:layout_height="wrap_content"
+      android:text="جستجو"
+      android:textColor="#ffffff"
+      android:id="@+id/btn5"
+      android:layout_below="@+id/btn4"
+      android:layout_centerHorizontal="true"
+      android:layout_centerVertical="true"
+      android:theme="@style/MyButton"
+      android:elevation="10dp"
+      android:onClick="btnSearch"
+      android:drawableRight="@drawable/ic_search_black_24dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+      android:layout_width="200dp"
+      android:layout_height="wrap_content"
+      android:text="تنظیمات"
+      android:textColor="#ffffff"
+      android:id="@+id/btn6"
+      android:layout_below="@+id/btn5"
+      android:layout_centerHorizontal="true"
+      android:layout_centerVertical="true"
+      android:theme="@style/MyButton"
+      android:elevation="10dp"
+      android:onClick="btnSetting"
+      android:drawableRight="@drawable/ic_settings_black_24dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+      android:layout_width="200dp"
+      android:layout_height="wrap_content"
+      android:text="منابع"
+      android:textColor="#ffffff"
+      android:id="@+id/btn7"
+      android:layout_below="@+id/btn6"
+      android:layout_centerHorizontal="true"
+      android:layout_centerVertical="true"
+      android:theme="@style/MyButton"
+      android:elevation="10dp"
+      android:onClick="btnManabee"
+      android:drawableRight="@drawable/ic_folder_black_24dp"/>
+
+
+    <ImageView
+      android:id="@+id/imageView"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/btn7"
+      android:layout_centerHorizontal="true"
+      android:layout_alignParentBottom="true"/>
+
+
+
+</RelativeLayout>
